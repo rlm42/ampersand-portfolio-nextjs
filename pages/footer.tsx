@@ -30,7 +30,6 @@ const Footer = () => {
               <MDBBtn
                 color="none"
                 rippleColor="dark"
-                link
                 floating
                 size="sm"
                 className="text-dark m-1"
@@ -43,7 +42,6 @@ const Footer = () => {
               <MDBBtn
                 color="none"
                 rippleColor="dark"
-                link
                 floating
                 size="sm"
                 className="text-dark m-1"
@@ -56,7 +54,6 @@ const Footer = () => {
               <MDBBtn
                 color="none"
                 rippleColor="dark"
-                link
                 floating
                 size="sm"
                 className="text-dark m-1"
@@ -69,7 +66,6 @@ const Footer = () => {
               <MDBBtn
                 color="none"
                 rippleColor="dark"
-                link
                 floating
                 size="sm"
                 className="text-dark m-1"
