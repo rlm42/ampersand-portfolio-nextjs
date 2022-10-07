@@ -1,7 +1,9 @@
+/* Need to use !important to override the Bootstrap styles */
+
 .links {
-  text-decoration: none;
+  text-decoration: none !important
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important
 }
