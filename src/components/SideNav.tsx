@@ -10,8 +10,6 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 
-import './SideNav.css'
-
 const SideNav = () => {
   const [slimOpen, setSlimOpen] = useState(true);
   const [slimCollapse1, setSlimCollapse1] = useState(false);
