@@ -26,7 +26,7 @@ const SideNav = () => {
         slimCollapsed={!slimCollapse1 && !slimCollapse2}
         getOpenState={(e: any) => setSlimOpen(e)}
       >
-        <MDBSideNavMenu className="links" a:hover a:focus>
+        <MDBSideNavMenu className="links">
           <MDBSideNavItem>
             <MDBSideNavLink href="#">
               <MDBIcon far icon="smile" className="fa-fw me-3" />
