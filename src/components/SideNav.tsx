@@ -30,7 +30,7 @@ const SideNav = () => {
           <MDBSideNavItem>
             <MDBSideNavLink>
               <MDBIcon far icon="smile" className="fa-fw me-3" />
-              <span className="sidenav-non-slim">Link 1</span>
+              <span className="sidenav-non-slim">About Me</span>
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem>
@@ -39,27 +39,21 @@ const SideNav = () => {
               shouldBeExpanded={slimCollapse1}
               onClick={() => setSlimCollapse1(!slimCollapse1)}
             >
-              <MDBIcon fas icon="grin" className="fa-fw me-3" />
-              <span className="sidenav-non-slim">Category 1</span>
+              <MDBIcon fas icon="book-open" className="fa-fw me-3" />
+              <span className="sidenav-non-slim">Portfolio</span>
             </MDBSideNavLink>
             <MDBSideNavCollapse show={slimCollapse1}>
-              <MDBSideNavLink>Link 2</MDBSideNavLink>
-              <MDBSideNavLink>Link 3</MDBSideNavLink>
+              <MDBSideNavLink>Logos</MDBSideNavLink>
+              <MDBSideNavLink>Flyers</MDBSideNavLink>
+              <MDBSideNavLink>Websites</MDBSideNavLink>
+              <MDBSideNavLink>T-Shirts</MDBSideNavLink>
             </MDBSideNavCollapse>
           </MDBSideNavItem>
           <MDBSideNavItem>
-            <MDBSideNavLink
-              icon="angle-down"
-              shouldBeExpanded={slimCollapse2}
-              onClick={() => setSlimCollapse2(!slimCollapse2)}
-            >
-              <MDBIcon fas icon="grin" className="fa-fw me-3" />
-              <span className="sidenav-non-slim">Category 2</span>
+            <MDBSideNavLink>
+              <MDBIcon far icon="envelope" className="fa-fw me-3" />
+              <span className="sidenav-non-slim">Contact</span>
             </MDBSideNavLink>
-            <MDBSideNavCollapse show={slimCollapse2}>
-              <MDBSideNavLink>Link 4</MDBSideNavLink>
-              <MDBSideNavLink>Link 5</MDBSideNavLink>
-            </MDBSideNavCollapse>
           </MDBSideNavItem>
         </MDBSideNavMenu>
       </MDBSideNav>
