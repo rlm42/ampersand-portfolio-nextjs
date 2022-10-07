@@ -46,9 +46,15 @@ const SideNav = () => {
         getOpenState={(e: any) => setSlimOpen(e)}
       >
         <MDBSideNavMenu className="links">
+        <MDBSideNavItem>
+            <MDBSideNavLink href="/">
+              <MDBIcon fas icon="home"  className="fa-fw me-3" />
+              <span className="sidenav-non-slim">Home</span>
+            </MDBSideNavLink>
+          </MDBSideNavItem>
           <MDBSideNavItem>
             <MDBSideNavLink href="#">
-              <MDBIcon far icon="smile" className="fa-fw me-3" />
+              <MDBIcon fas icon="user" className="fa-fw me-3" />
               <span className="sidenav-non-slim">About Me</span>
             </MDBSideNavLink>
           </MDBSideNavItem>
@@ -58,7 +64,7 @@ const SideNav = () => {
               shouldBeExpanded={slimCollapse1}
               onClick={() => setSlimCollapse1(!slimCollapse1)}
             >
-              <MDBIcon fas icon="book-open" className="fa-fw me-3" />
+              <MDBIcon fas icon="pencil-alt" className="fa-fw me-3" />
               <span className="sidenav-non-slim">Portfolio</span>
             </MDBSideNavLink>
             <MDBSideNavCollapse show={slimCollapse1}>
@@ -70,7 +76,7 @@ const SideNav = () => {
           </MDBSideNavItem>
           <MDBSideNavItem>
             <MDBSideNavLink tag="a" href="/contact">
-              <MDBIcon far icon="envelope" className="fa-fw me-3" />
+              <MDBIcon fas icon="envelope" className="fa-fw me-3" />
               <span className="sidenav-non-slim">Contact</span>
             </MDBSideNavLink>
           </MDBSideNavItem>
