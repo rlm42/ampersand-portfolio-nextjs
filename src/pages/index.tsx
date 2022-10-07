@@ -25,8 +25,8 @@ const Home: NextPage = () => {
       </Head>
 
       <Footer />
-
-      <MDBContainer>
+      {/* mt means margin top */}
+      <MDBContainer className="mt-4">
         <MDBRow>
           <MDBCol md="4">
             <SideNav />
