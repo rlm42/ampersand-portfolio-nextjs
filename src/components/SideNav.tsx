@@ -18,6 +18,25 @@ const SideNav = () => {
 
   return (
     <>
+      <div style={{ padding: "20px" }} className="text-center">
+        <MDBBtn
+          onClick={() => setSlimOpen(!slimOpen)}
+          size="sm"
+          className="mx-2"
+          color="dark"
+        >
+          <MDBIcon fas icon="bars" />
+        </MDBBtn>
+        <MDBBtn
+          onClick={() => setSlimMode(!slimMode)}
+          size="sm"
+          className="mx-2"
+          color="dark"
+        >
+          Toggle slim
+        </MDBBtn>
+      </div>
+
       <MDBSideNav
         backdrop={false}
         isOpen={slimOpen}
@@ -43,39 +62,20 @@ const SideNav = () => {
               <span className="sidenav-non-slim">Portfolio</span>
             </MDBSideNavLink>
             <MDBSideNavCollapse show={slimCollapse1}>
-              <MDBSideNavLink  href="#">Logos</MDBSideNavLink>
+              <MDBSideNavLink href="#">Logos</MDBSideNavLink>
               <MDBSideNavLink href="#">Flyers</MDBSideNavLink>
               <MDBSideNavLink href="#">Websites</MDBSideNavLink>
               <MDBSideNavLink href="#">T-Shirts</MDBSideNavLink>
             </MDBSideNavCollapse>
           </MDBSideNavItem>
           <MDBSideNavItem>
-            <MDBSideNavLink href="#">
+            <MDBSideNavLink tag="a" href="/contact">
               <MDBIcon far icon="envelope" className="fa-fw me-3" />
               <span className="sidenav-non-slim">Contact</span>
             </MDBSideNavLink>
           </MDBSideNavItem>
         </MDBSideNavMenu>
       </MDBSideNav>
-
-      <div style={{ padding: "20px" }} className="text-center">
-        <MDBBtn
-          onClick={() => setSlimOpen(!slimOpen)}
-          size="sm"
-          className="mx-2"
-          color="dark"
-        >
-          <MDBIcon fas icon="bars" />
-        </MDBBtn>
-        <MDBBtn
-          onClick={() => setSlimMode(!slimMode)}
-          size="sm"
-          className="mx-2"
-          color="dark"
-        >
-          Toggle slim
-        </MDBBtn>
-      </div>
     </>
   );
 };
