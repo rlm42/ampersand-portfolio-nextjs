@@ -26,7 +26,7 @@ const SideNav = () => {
         slimCollapsed={!slimCollapse1 && !slimCollapse2}
         getOpenState={(e: any) => setSlimOpen(e)}
       >
-        <MDBSideNavMenu>
+        <MDBSideNavMenu className="links">
           <MDBSideNavItem>
             <MDBSideNavLink href="#">
               <MDBIcon far icon="smile" className="fa-fw me-3" />
@@ -43,7 +43,7 @@ const SideNav = () => {
               <span className="sidenav-non-slim">Portfolio</span>
             </MDBSideNavLink>
             <MDBSideNavCollapse show={slimCollapse1}>
-              <MDBSideNavLink href="#" text-decoration="none">Logos</MDBSideNavLink>
+              <MDBSideNavLink  href="#">Logos</MDBSideNavLink>
               <MDBSideNavLink href="#">Flyers</MDBSideNavLink>
               <MDBSideNavLink href="#">Websites</MDBSideNavLink>
               <MDBSideNavLink href="#">T-Shirts</MDBSideNavLink>
