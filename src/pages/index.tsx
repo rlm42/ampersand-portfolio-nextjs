@@ -12,7 +12,8 @@ import Footer from "../components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
-// import ampersandLogo from "../../public/images/ampersandlogo.png";
+import ampersandLogo from "../../public/images/ampersandlogo.png";
+import test from "../../public/images/test.png"
 
 const Home: NextPage = () => {
   return (
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
           </MDBCol>
           <MDBCol md="4">
             <Image
-              src="../../public/images/ampersandlogo.png"
+              src={test}
               alt="Ampersand Logo"
               width={486}
               height={112}
