@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
-import ampersandLogo from "../../public/images/ampersandlogo.png";
+import ampersandLogo from "../../public/images/ampersandlogo2.png";
 import test from "../../public/images/test.png"
 
 const Home: NextPage = () => {
