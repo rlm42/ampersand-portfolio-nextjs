@@ -3,17 +3,5 @@
 }
 
 a {
-  text-decoration: none !important;
-}
-
-a:hover {
-  text-decoration: none !important;
-}
-
-a:visited {
-  text-decoration: none !important;
-}
-
-a:focus {
-  text-decoration: none !important;
+  text-decoration: none 
 }
