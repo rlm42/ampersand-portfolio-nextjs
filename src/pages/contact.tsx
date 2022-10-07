@@ -47,6 +47,7 @@ function Contact() {
                   value={formValue.name}
                   onChange={onChange}
                   required
+                  // @ts-ignore 
                   validation="Please provide your name."
                   invalid
                 />
@@ -59,18 +60,19 @@ function Contact() {
                   value={formValue.email}
                   onChange={onChange}
                   required
+                  // @ts-ignore 
                   validation="Please provide your valid email."
                   invalid
                 />
                 <MDBInput
                   className="margin-bottom bg-light"
                   label="Subject"
-                  name="subject"
                   id="typeText"
                   type="text"
                   value={formValue.subject}
                   onChange={onChange}
                   required
+                  // @ts-ignore 
                   validation="Please provide a subject."
                   invalid
                 />
@@ -79,6 +81,7 @@ function Contact() {
                   label="Message"
                   name="message"
                   id="textAreaExample"
+                  // @ts-ignore 
                   textarea
                   rows={4}
                   value={formValue.message}
@@ -86,7 +89,7 @@ function Contact() {
                   required
                   validation="Please type your enquiry/request."
                   invalid
-                />
+                  />
               </div>
               <MDBBtn>Send Enquiry</MDBBtn>
             </form>
