@@ -28,7 +28,7 @@ const SideNav = () => {
       >
         <MDBSideNavMenu>
           <MDBSideNavItem>
-            <MDBSideNavLink>
+            <MDBSideNavLink href="#">
               <MDBIcon far icon="smile" className="fa-fw me-3" />
               <span className="sidenav-non-slim">About Me</span>
             </MDBSideNavLink>
@@ -43,14 +43,14 @@ const SideNav = () => {
               <span className="sidenav-non-slim">Portfolio</span>
             </MDBSideNavLink>
             <MDBSideNavCollapse show={slimCollapse1}>
-              <MDBSideNavLink>Logos</MDBSideNavLink>
-              <MDBSideNavLink>Flyers</MDBSideNavLink>
-              <MDBSideNavLink>Websites</MDBSideNavLink>
-              <MDBSideNavLink>T-Shirts</MDBSideNavLink>
+              <MDBSideNavLink href="#" text-decoration="none">Logos</MDBSideNavLink>
+              <MDBSideNavLink href="#">Flyers</MDBSideNavLink>
+              <MDBSideNavLink href="#">Websites</MDBSideNavLink>
+              <MDBSideNavLink href="#">T-Shirts</MDBSideNavLink>
             </MDBSideNavCollapse>
           </MDBSideNavItem>
           <MDBSideNavItem>
-            <MDBSideNavLink>
+            <MDBSideNavLink href="#">
               <MDBIcon far icon="envelope" className="fa-fw me-3" />
               <span className="sidenav-non-slim">Contact</span>
             </MDBSideNavLink>
