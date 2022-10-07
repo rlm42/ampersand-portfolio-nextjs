@@ -34,8 +34,9 @@ const Home: NextPage = () => {
             <Image
               src={ampersandLogo}
               alt="Ampersand Logo"
-              width={50}
-              height={50}
+              width={486}
+              height={112}
+              layout="responsive"
               // blurDataURL="data:..." automatically provided
               // placeholder="blur" // Optional blur-up while loading
             />
