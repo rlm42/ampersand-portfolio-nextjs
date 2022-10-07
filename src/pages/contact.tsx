@@ -104,6 +104,7 @@ function Contact() {
   );
 }
 
+// @ts-ignore 
 function sendEmail(e) {
   e.preventDefault();
 
