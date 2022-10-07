@@ -33,7 +33,7 @@ const Home: NextPage = () => {
           </MDBCol>
           <MDBCol md="4">
             <Image
-              src={test}
+              src={ampersandLogo}
               alt="Ampersand Logo"
               width={486}
               height={112}
