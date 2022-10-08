@@ -10,6 +10,7 @@ import {
 const Logos = () => {
   return (
     <div className="d-flex align-items-center justify-content-center">
+        Hello world
       {/* <MDBLightbox>
         <MDBRow>
           <MDBCol lg="4">
