@@ -68,7 +68,7 @@ const SideNav = () => {
               <span className="sidenav-non-slim">Portfolio</span>
             </MDBSideNavLink>
             <MDBSideNavCollapse show={slimCollapse1}>
-              <MDBSideNavLink href="/logos">Logos</MDBSideNavLink>
+              <MDBSideNavLink href="/">Logos</MDBSideNavLink>
               <MDBSideNavLink href="#">Flyers</MDBSideNavLink>
               <MDBSideNavLink href="#">Websites</MDBSideNavLink>
               <MDBSideNavLink href="#">T-Shirts</MDBSideNavLink>
