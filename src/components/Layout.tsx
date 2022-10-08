@@ -17,9 +17,7 @@ const Layout = (props: LayoutProps) => {
     <div>
       <MDBContainer className="mt-4">
         <MDBRow>
-          <MDBCol md="4">
-          <SideNav />
-          </MDBCol>
+          <MDBCol md="4"></MDBCol>
           <MDBCol md="4">
             <Image
               src={ampersandLogo}
@@ -30,6 +28,7 @@ const Layout = (props: LayoutProps) => {
               // blurDataURL="data:..." automatically provided
               // placeholder="blur" // Optional blur-up while loading
             />
+            <SideNav />
           </MDBCol>
           <MDBCol md="4"></MDBCol>
         </MDBRow>
