@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "../../styles/Home.module.css";
 import emailjs from "emailjs-com";
 
 import {
@@ -8,7 +7,9 @@ import {
   MDBCol,
   MDBRow,
   MDBBtn,
+  MDBTextArea,
   MDBValidation,
+  MDBIcon,
 } from "mdb-react-ui-kit";
 
 function Contact() {
@@ -24,7 +25,10 @@ function Contact() {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center" style={{ height: "80vh" }}>
+    <div
+      className="d-flex align-items-center justify-content-center"
+      style={{ height: "80vh" }}
+    >
       <MDBContainer className="contactcontainer">
         <MDBRow>
           <MDBCol size="md" className="col-example">
@@ -47,12 +51,13 @@ function Contact() {
                   value={formValue.name}
                   onChange={onChange}
                   required
-                  // @ts-ignore 
+                  // @ts-ignore
                   validation="Please provide your name."
                   invalid
                 />
                 <MDBInput
-                  className="margin-bottom bg-light"
+                  // mt is margin top
+                  className="margin-bottom bg-light mt-3"
                   label="Email"
                   name="email"
                   id="typeEmail"
@@ -60,38 +65,58 @@ function Contact() {
                   value={formValue.email}
                   onChange={onChange}
                   required
-                  // @ts-ignore 
+                  // @ts-ignore
                   validation="Please provide your valid email."
                   invalid
                 />
                 <MDBInput
-                  className="margin-bottom bg-light"
+                  className="margin-bottom bg-light mt-3"
                   label="Subject"
+                  name="subject"
                   id="typeText"
                   type="text"
                   value={formValue.subject}
                   onChange={onChange}
                   required
-                  // @ts-ignore 
+                  // @ts-ignore
                   validation="Please provide a subject."
                   invalid
                 />
-                <MDBInput
+                <MDBTextArea
+                  label="Message"
+                  id="textArea"
+                  rows={4}
+                  className="margin-bottom bg-light mt-3"
+                  name="message"
+                  // @ts-ignore
+                  // textarea
+                  rows={4}
+                  value={formValue.message}
+                  onChange={onChange}
+                  required
+                  // @ts-ignore
+                  validation="Please type your enquiry/request."
+                  invalid
+                />
+                {/* <MDBInput
                   className="margin-bottom bg-light"
                   label="Message"
                   name="message"
                   id="textAreaExample"
-                  // @ts-ignore 
-                  textarea
+                  // @ts-ignore
+                  // textarea
                   rows={4}
                   value={formValue.message}
                   onChange={onChange}
                   required
                   validation="Please type your enquiry/request."
                   invalid
-                  />
+                /> */}
               </div>
-              <MDBBtn>Send Enquiry</MDBBtn>
+              {/* <MDBBtn className="text-center mt-3">Send Enquiry</MDBBtn> */}
+              <MDBBtn tag="a" className="text-center mt-3">
+              Send <MDBIcon far icon="paper-plane" />
+              </MDBBtn>
             </form>
             {/* </MDBValidation> */}
           </MDBCol>
@@ -104,7 +129,7 @@ function Contact() {
   );
 }
 
-// @ts-ignore 
+// @ts-ignore
 function sendEmail(e) {
   e.preventDefault();
 
