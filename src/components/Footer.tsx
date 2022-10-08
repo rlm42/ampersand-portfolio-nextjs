@@ -18,7 +18,7 @@ const Footer = () => {
         <MDBRow>
           <MDBCol>
             <div
-              className="text-center p-2 font-monospace fs-6"
+              className="text-center p-2 font-monospace fs-6, footer-text"
               style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
             >
               &copy; {new Date().getFullYear()} Copyright -{" "}
