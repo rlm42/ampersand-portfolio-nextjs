@@ -75,7 +75,7 @@ const SideNav = () => {
             </MDBSideNavCollapse>
           </MDBSideNavItem>
           <MDBSideNavItem>
-            <MDBSideNavLink href="/contact">
+            <MDBSideNavLink tag="a" href="/contact">
               <MDBIcon fas icon="envelope" className="fa-fw me-3" />
               <span className="sidenav-non-slim">Contact</span>
             </MDBSideNavLink>
