@@ -90,7 +90,6 @@ function Contact() {
                   name="message"
                   // @ts-ignore
                   // textarea
-                  rows={4}
                   value={formValue.message}
                   onChange={onChange}
                   required
