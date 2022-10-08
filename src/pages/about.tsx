@@ -21,7 +21,7 @@ const About = () => {
           </div>
           <div className="mt-3">
             <p>
-              My interest outside of graphic design and fine arts, includes
+              My interests outside of graphic design and fine arts, include
               listening to music, writing poetry, riding my scooter, hiking and
               visting many temples which my country has a lot of! I like to lean
               about history and culture. Eager to work with any brands or
