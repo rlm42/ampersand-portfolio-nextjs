@@ -1,9 +1,4 @@
-/* .footer-text {
+.footer-text {
     font-size: 0.8rem;
-  } */
-
-  @media screen and (min-width: 75em) {
-    .footer-text {
-      font-size: 0.8rem;
-    }
   }
+
