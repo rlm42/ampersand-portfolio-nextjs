@@ -9,7 +9,6 @@ import {
   MDBBtn,
   MDBTextArea,
   MDBValidation,
-  MDBIcon,
 } from "mdb-react-ui-kit";
 
 function Contact() {
@@ -90,6 +89,7 @@ function Contact() {
                   name="message"
                   // @ts-ignore
                   // textarea
+                  rows={4}
                   value={formValue.message}
                   onChange={onChange}
                   required
@@ -112,9 +112,8 @@ function Contact() {
                   invalid
                 /> */}
               </div>
-              {/* <MDBBtn className="text-center mt-3">Send Enquiry</MDBBtn> */}
-              <MDBBtn tag="a" className="text-center mt-3">
-              Send <MDBIcon far icon="paper-plane" />
+              <MDBBtn color="dark" className="text-center mt-3">
+                Send
               </MDBBtn>
             </form>
             {/* </MDBValidation> */}

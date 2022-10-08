@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   MDBSideNav,
@@ -18,26 +18,11 @@ const SideNav = () => {
 
   return (
     <>
-      <div style={{ padding: "20px" }} className="text-center">
-        <MDBBtn
-          onClick={() => setSlimOpen(!slimOpen)}
-          size="sm"
-          className="mx-2"
-          color="dark"
-        >
-          <MDBIcon fas icon="bars" />
-        </MDBBtn>
-        <MDBBtn
-          onClick={() => setSlimMode(!slimMode)}
-          size="sm"
-          className="mx-2"
-          color="dark"
-        >
-          Toggle slim
-        </MDBBtn>
-      </div>
-
       <MDBSideNav
+        className="customnav"
+        color='light'
+        bgColor='dark'
+        outline
         backdrop={false}
         isOpen={slimOpen}
         absolute
@@ -45,21 +30,22 @@ const SideNav = () => {
         slimCollapsed={!slimCollapse1 && !slimCollapse2}
         getOpenState={(e: any) => setSlimOpen(e)}
       >
-        <MDBSideNavMenu className="links">
-        <MDBSideNavItem>
+        <MDBSideNavMenu>
+          <MDBSideNavItem>
             <MDBSideNavLink href="/">
-              <MDBIcon fas icon="home"  className="fa-fw me-3" />
+              <MDBIcon fas icon="home" className="fa-fw me-3" />
               <span className="sidenav-non-slim">Home</span>
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem>
-            <MDBSideNavLink href="#">
+            <MDBSideNavLink href="/about">
               <MDBIcon fas icon="user" className="fa-fw me-3" />
               <span className="sidenav-non-slim">About Me</span>
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem>
             <MDBSideNavLink
+              collapse-hide="true"
               icon="angle-down"
               shouldBeExpanded={slimCollapse1}
               onClick={() => setSlimCollapse1(!slimCollapse1)}
@@ -68,10 +54,10 @@ const SideNav = () => {
               <span className="sidenav-non-slim">Portfolio</span>
             </MDBSideNavLink>
             <MDBSideNavCollapse show={slimCollapse1}>
-              <MDBSideNavLink href="/logos">Logos</MDBSideNavLink>
-              <MDBSideNavLink href="#">Flyers</MDBSideNavLink>
-              <MDBSideNavLink href="#">Websites</MDBSideNavLink>
-              <MDBSideNavLink href="#">T-Shirts</MDBSideNavLink>
+              <MDBSideNavLink>Logo</MDBSideNavLink>
+              <MDBSideNavLink>Flyers</MDBSideNavLink>
+              <MDBSideNavLink>Websites</MDBSideNavLink>
+              <MDBSideNavLink>T-Shirts</MDBSideNavLink>
             </MDBSideNavCollapse>
           </MDBSideNavItem>
           <MDBSideNavItem>
@@ -82,6 +68,27 @@ const SideNav = () => {
           </MDBSideNavItem>
         </MDBSideNavMenu>
       </MDBSideNav>
+
+      <div style={{ padding: "20px" }} className="text-center">
+        <MDBBtn
+          onClick={() => setSlimOpen(!slimOpen)}
+          color="dark"
+          outline
+          size="sm"
+          className="mx-2"
+        >
+          <MDBIcon fas icon="bars" />
+        </MDBBtn>
+        <MDBBtn
+          onClick={() => setSlimMode(!slimMode)}
+          color="dark"
+          outline
+          size="sm"
+          className="mx-2"
+        >
+          Toggle slim
+        </MDBBtn>
+      </div>
     </>
   );
 };
