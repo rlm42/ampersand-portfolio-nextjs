@@ -24,7 +24,7 @@ const About = () => {
             businesses.
           </div>
           <div className="mt-3">
-            Have a question or business proposal? Fill out the contact form as I
+            Have a question or business proposal? Fill out the contact form as I 
             would love to help with your brand's needs and find a way I can
             help.
           </div>
