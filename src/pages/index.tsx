@@ -4,7 +4,17 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import { MDBContainer, MDBRow, MDBCol, MDBLightbox, MDBLightboxItem } from "mdb-react-ui-kit";
+import {
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBLightbox,
+  MDBLightboxItem,
+} from "mdb-react-ui-kit";
+
+import { ImageList, ImageListItem, Grid } from "@mui/material";
+
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
 import SideNav from "../components/SideNav";
 import Footer from "../components/Footer";
@@ -16,6 +26,69 @@ import ampersandLogo from "../../public/images/ampersandlogo2.png";
 import test from "../../public/images/test.png";
 
 const Home: NextPage = () => {
+  const itemData = [
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A0527.jpg",
+      title: "Mount Mtatsminda, Tbilisi",
+      id: 1,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A0547.jpg",
+      title: "Panda the Dog",
+      id: 2,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A0589.jpg",
+      title: "Lake Lisi, Tbilisi",
+      id: 3,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A0451.jpg",
+      title: "Waterfall, Tbilisi National Botanical Garden",
+      id: 4,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A0482.jpg",
+      title: "Holy Mother of God Church of Bethlehem, Tbilisi",
+      id: 5,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A0487.jpg",
+      title: "Kartlis Deda Statue, Tbilisi",
+      id: 6,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A0672.jpg",
+      title: "Borjomi-Kharagauli National Park",
+      id: 7,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A0965.jpg",
+      title: "",
+      id: 8,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A0968.jpg",
+      title: "",
+      id: 9,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A1011.jpg",
+      title: "",
+      id: 10,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A1050.jpg",
+      title: "Sabaduri Forest",
+      id: 11,
+    },
+    {
+      img: "https://photographyportfolio.imgix.net/Georgia/049A1068.jpg",
+      title: "Sabaduri Forest",
+      id: 12,
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -24,29 +97,33 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <MDBLightbox>
-        <MDBRow>
-          <MDBCol lg="6">
-            <MDBLightboxItem
-              src="https://mdbootstrap.com/img/Photos/Thumbnails/Slides/1.webp"
-              fullscreenSrc="https://mdbootstrap.com/img/Photos/Slides/1.webp"
-              className="w-100 mb-2 mb-md-4"
-            />
-            <MDBLightboxItem
-              src="https://mdbootstrap.com/img/Photos/Thumbnails/Square/1.webp"
-              fullscreenSrc="https://mdbootstrap.com/img/Photos/Square/1.webp"
-              className="w-100"
-            />
-          </MDBCol>
-          <MDBCol lg="6">
-            <MDBLightboxItem
-              src="https://mdbootstrap.com/img/Photos/Thumbnails/Vertical/1.webp"
-              fullscreenSrc="https://mdbootstrap.com/img/Photos/Vertical/1.webp"
-              className="w-100"
-            />
-          </MDBCol>
-        </MDBRow>
-      </MDBLightbox> */}
+      <Grid container spacing={2} minHeight={160} justifyContent="center" alignItems="center" className="mt-3 mb-3">
+        <Grid display="flex" justifyContent="center" alignItems="center">
+          <SimpleReactLightbox>
+            <SRLWrapper>
+              <ImageList
+                sx={{ width: 500, height: 450 }}
+                cols={3}
+                rowHeight={164}
+              >
+                {itemData.map((item) => (
+                  <ImageListItem key={item.img}>
+                    <img
+                      src={`${item.img}`}
+                      srcSet={`${item.img}`}
+                      alt={item.title}
+                      loading="lazy"
+                      style={{
+                        borderRadius: 15,
+                      }}
+                    />
+                  </ImageListItem>
+                ))}
+              </ImageList>
+            </SRLWrapper>
+          </SimpleReactLightbox>
+        </Grid>
+      </Grid>
     </div>
   );
 };
