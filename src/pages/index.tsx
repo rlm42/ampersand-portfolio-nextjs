@@ -29,7 +29,7 @@ const Home: NextPage = () => {
   const itemData = [
     {
       img: "https://photographyportfolio.imgix.net/Georgia/049A0527.jpg",
-      title: "Mount Mtatsminda, Tbilisii",
+      title: "Mount Mtatsminda, Tbilisi",
       id: 1,
     },
     {
