@@ -1,12 +1,15 @@
-import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
+// import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 import Image from "next/image";
 
 const About = () => {
   return (
-    <MDBContainer fluid className="about-text">
-      <MDBRow>
-        <MDBCol md="3"></MDBCol>
-        <MDBCol md="4">
+    <div
+      className="container-fluid about-text d-flex align-items-center justify-content-center"
+      style={{ height: "100vh" }}
+    >
+      <div className="row">
+        <div className="col-3"></div>
+        <div className="col-4">
           <div>
             <p>
               Hello! My name is Restimewa, you can call me Resti. I was born and
@@ -31,12 +34,12 @@ const About = () => {
           <div className="mt-3">
             <p>
               Have a question or business proposal? Fill out the contact form as
-              I would love to help with your brand&apos;s needs and find a way
-              I can help.
+              I would love to help with your brand&apos;s needs and find a way I
+              can help.
             </p>
           </div>
-        </MDBCol>
-        <MDBCol md="4">
+        </div>
+        <div className="col-4">
           <Image
             src="/images/mewa2resized2.png"
             alt="Me"
@@ -46,9 +49,9 @@ const About = () => {
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+        </div>
+      </div>
+    </div>
   );
 };
 

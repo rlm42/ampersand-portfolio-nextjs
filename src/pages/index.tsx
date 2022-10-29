@@ -4,13 +4,13 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBLightbox,
-  MDBLightboxItem,
-} from "mdb-react-ui-kit";
+// import {
+//   MDBContainer,
+//   MDBRow,
+//   MDBCol,
+//   MDBLightbox,
+//   MDBLightboxItem,
+// } from "mdb-react-ui-kit";
 
 import { ImageList, ImageListItem, Grid } from "@mui/material";
 

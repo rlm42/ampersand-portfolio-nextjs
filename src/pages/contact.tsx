@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-import {
-  MDBInput,
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-  MDBBtn,
-  MDBTextArea,
-  MDBValidation,
-} from "mdb-react-ui-kit";
+// import {
+//   MDBInput,
+//   MDBContainer,
+//   MDBCol,
+//   MDBRow,
+//   MDBBtn,
+//   MDBTextArea,
+//   MDBValidation,
+// } from "mdb-react-ui-kit";
 
 function Contact() {
   const [formValue, setFormValue] = useState({
@@ -26,14 +26,12 @@ function Contact() {
   return (
     <div
       className="d-flex align-items-center justify-content-center"
-      style={{ height: "80vh" }}
+      style={{ height: "100vh" }}
     >
-      <MDBContainer className="contactcontainer">
-        <MDBRow>
-          <MDBCol size="md" className="col-example">
-            {/* One of three columns */}
-          </MDBCol>
-          <MDBCol size="md" className="col-example">
+      <div className="container contactcontainer">
+        <div className="row">
+          <div className="col-4">{/* One of three columns */}</div>
+          <div className="col-4">
             {/* <MDBValidation
               className="row g-3"
               noValidate
@@ -41,61 +39,73 @@ function Contact() {
             > */}
             <form needs-validation="true" onSubmit={sendEmail}>
               <div className="has-validation">
-                <MDBInput
-                  className="margin-bottom bg-light"
-                  label="Name"
-                  name="name"
-                  id="typeText"
-                  type="text"
-                  value={formValue.name}
-                  onChange={onChange}
-                  required
-                  // @ts-ignore
-                  validation="Please provide your name."
-                  invalid
-                />
-                <MDBInput
-                  // mt is margin top
-                  className="margin-bottom bg-light mt-3"
-                  label="Email"
-                  name="email"
-                  id="typeEmail"
-                  type="email"
-                  value={formValue.email}
-                  onChange={onChange}
-                  required
-                  // @ts-ignore
-                  validation="Please provide your valid email."
-                  invalid
-                />
-                <MDBInput
-                  className="margin-bottom bg-light mt-3"
-                  label="Subject"
-                  name="subject"
-                  id="typeText"
-                  type="text"
-                  value={formValue.subject}
-                  onChange={onChange}
-                  required
-                  // @ts-ignore
-                  validation="Please provide a subject."
-                  invalid
-                />
-                <MDBTextArea
-                  label="Message"
-                  id="textArea"
-                  rows={4}
-                  className="margin-bottom bg-light mt-3"
-                  name="message"
-                  // @ts-ignore
-                  // textarea
-                  value={formValue.message}
-                  onChange={onChange}
-                  required
-                  // @ts-ignore
-                  validation="Please type your enquiry/request."
-                  invalid
-                />
+                <div>
+                  <input
+                    className="margin-bottom bg-light form-control"
+                    // label="Name"
+                    placeholder="Name"
+                    name="name"
+                    id="typeText"
+                    type="text"
+                    value={formValue.name}
+                    onChange={onChange}
+                    required
+                    // @ts-ignore
+                    validation="Please provide your name."
+                    invalid
+                  />
+                </div>
+                <div>
+                  <input
+                    // mt is margin top
+                    className="margin-bottom bg-light mt-3 form-control"
+                    // label="Email"
+                    placeholder="Email"
+                    name="email"
+                    id="typeEmail"
+                    type="email"
+                    value={formValue.email}
+                    onChange={onChange}
+                    required
+                    // @ts-ignore
+                    validation="Please provide your valid email."
+                    invalid
+                  />
+                </div>
+                <div>
+                  <input
+                    className="margin-bottom bg-light mt-3 form-control"
+                    // label="Subject"
+                    placeholder="Subject"
+                    name="subject"
+                    id="typeText"
+                    type="text"
+                    value={formValue.subject}
+                    onChange={onChange}
+                    required
+                    // @ts-ignore
+                    validation="Please provide a subject."
+                    invalid
+                  />
+                </div>
+                <div>
+                  <textarea
+                    // label="Message"
+                    placeholder="Message"
+                    id="textArea"
+                    rows={8}
+                    className="margin-bottom bg-light mt-3 form-control"
+                    name="message"
+                    // @ts-ignore
+                    // textarea
+                    value={formValue.message}
+                    onChange={onChange}
+                    required
+                    // @ts-ignore
+                    validation="Please type your enquiry/request."
+                    invalid
+                  />
+                </div>
                 {/* <MDBInput
                   className="margin-bottom bg-light"
                   label="Message"
@@ -111,17 +121,15 @@ function Contact() {
                   invalid
                 /> */}
               </div>
-              <MDBBtn color="dark" className="text-center mt-3">
+              <button className="text-center mt-3 btn btn-dark">
                 Send
-              </MDBBtn>
+              </button>
             </form>
             {/* </MDBValidation> */}
-          </MDBCol>
-          <MDBCol size="md" className="col-example">
-            {/* One of three columns */}
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
+          </div>
+          <div className="col-4">{/* One of three columns */}</div>
+        </div>
+      </div>
     </div>
   );
 }
