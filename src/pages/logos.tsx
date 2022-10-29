@@ -1,11 +1,11 @@
 import React from "react";
-import {
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-  MDBLightbox,
-  MDBLightboxItem,
-} from "mdb-react-ui-kit";
+// import {
+//   MDBContainer,
+//   MDBCol,
+//   MDBRow,
+//   MDBLightbox,
+//   MDBLightboxItem,
+// } from "mdb-react-ui-kit";
 
 const Logos = () => {
   return (
