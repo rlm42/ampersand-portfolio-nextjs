@@ -27,15 +27,13 @@ const About = () => {
               My interests outside of graphic design and fine arts, include
               listening to music, writing poetry, riding my scooter, hiking and
               visting many temples which my country has a lot of! I like to lean
-              about history and culture. Eager to work with any brands or
-              businesses.
+              about history and culture. 
             </p>
           </div>
           <div className="mt-3">
             <p>
-              Have a question or business proposal? Fill out the contact form as
-              I would love to help with your brand&apos;s needs and find a way I
-              can help.
+              Have a question or business proposal? Fill out the contact form. Eager to work with any brands or
+              businesses, large or small. I would love to create design/s to meet your needs!
             </p>
           </div>
         </div>
