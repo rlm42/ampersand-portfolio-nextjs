@@ -95,7 +95,7 @@ const Home: NextPage = () => {
 
   return (
     <div
-      className={styles.container}
+      // className={styles.container}
       style={{ height: "100vh" }}
       className="d-flex align-items-center justify-content-center"
     >
