@@ -97,7 +97,7 @@ const Home: NextPage = () => {
     <div
       // className={styles.container}
       style={{ height: "100vh" }}
-      className="d-flex align-items-center justify-content-center"
+      className="d-flex align-items-center justify-content-center mt-3 mb-3"
     >
       <Head>
         <title>Ampersand Graphic Design</title>
