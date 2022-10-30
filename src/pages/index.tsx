@@ -139,6 +139,8 @@ const Home: NextPage = () => {
                   style={{
                     borderRadius: 15,
                   }}
+                  width="550"
+                  height="auto"
                 />
 
                 <Carousel.Caption>
@@ -157,6 +159,8 @@ const Home: NextPage = () => {
                   style={{
                     borderRadius: 15,
                   }}
+                  width="550"
+                  height="auto"
                 />
 
                 <Carousel.Caption>
@@ -174,6 +178,8 @@ const Home: NextPage = () => {
                   style={{
                     borderRadius: 15,
                   }}
+                  width="550"
+                  height="auto"
                 />
                 <Carousel.Caption>
                   <h3>Website Design</h3>
@@ -190,6 +196,8 @@ const Home: NextPage = () => {
                   style={{
                     borderRadius: 15,
                   }}
+                  width="550"
+                  height="auto"
                 />
 
                 <Carousel.Caption>
