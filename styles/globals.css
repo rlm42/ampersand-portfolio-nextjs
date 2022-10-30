@@ -11,10 +11,13 @@ body {
   /* Full height */
   height: 100%;
 
+  /* Use these ones */
   /* Center and scale the image nicely */
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
+
+  /* background-size: 100vw 100vh; */
 }
 
 a {

@@ -27,18 +27,19 @@ const About = () => {
               My interests outside of graphic design and fine arts, include
               listening to music, writing poetry, riding my scooter, hiking and
               visting many temples which my country has a lot of! I like to lean
-              about history and culture. 
+              about history and culture.
             </p>
           </div>
           <div className="mt-3">
             <p>
-              Have a question or business proposal? Fill out the contact form. Eager to work with any brands or
-              businesses, large or small. I would love to create design/s to meet your needs!
+              Have a question or business proposal? Fill out the contact form.
+              Eager to work with any brands or businesses, large or small. I
+              would love to create design/s to meet your needs!
             </p>
           </div>
         </div>
         <div className="col-4">
-          <Image
+          {/* <Image
             src="/images/mewaresti2.png"
             alt="Me"
             width="350"
@@ -46,6 +47,12 @@ const About = () => {
             layout="intrinsic"
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
+          /> */}
+          <img
+            className="d-block"
+            // We can resize the image on the fly using ?h=600
+            src="https://ampersandportfolio.imgix.net/mewaresti2.png"
+            alt="Mewa Resti"
           />
         </div>
       </div>
