@@ -97,7 +97,7 @@ const Home: NextPage = () => {
     <div
       // className={styles.container}
       style={{ height: "100vh" }}
-      className="d-flex align-items-center justify-content-center mt-3 mb-3"
+      className="fluid d-flex align-items-center justify-content-center"
     >
       <Head>
         <title>Ampersand Graphic Design</title>
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Container>
-        <Row>
+        <Row className="fluid d-flex justify-content-center align-items-center">
           <Col className="fluid d-flex justify-content-center align-items-center">
             {/* <Image
               src="/images/asthetic2.png"
