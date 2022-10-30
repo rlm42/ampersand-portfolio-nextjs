@@ -37,8 +37,9 @@ function Contact() {
               noValidate
               needs-validation="true"
             > */}
+            <div>Send a message and we'll get back to you shortly.</div>
             <form needs-validation="true" onSubmit={sendEmail}>
-              <div className="has-validation">
+              <div className="has-validation mt-3">
                 <div>
                   <input
                     className="margin-bottom bg-light form-control"
@@ -121,9 +122,7 @@ function Contact() {
                   invalid
                 /> */}
               </div>
-              <button className="text-center mt-3 btn btn-dark">
-                Send
-              </button>
+              <button className="text-center mt-3 btn btn-dark">Send</button>
             </form>
             {/* </MDBValidation> */}
           </div>
@@ -140,8 +139,8 @@ function sendEmail(e) {
 
   emailjs
     .sendForm(
-      "service_d3g2p4k",
-      "template_v2gkwlk",
+      "service_ampersand",
+      "template_ovbbv1c",
       e.target,
       "user_krfqXrYCupFzUs6XwTjHN"
     )

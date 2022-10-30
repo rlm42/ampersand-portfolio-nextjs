@@ -108,15 +108,15 @@ const Footer = () => {
           </Grid>
           <Grid item md={6}>
             <Box textAlign="right">
-              <Link href="https://www.facebook.com/ampersand.graphicdesign.79" color="inherit" sx={{ m: 2 }} >
+              {/* <Link href="https://www.facebook.com/ampersand.graphicdesign.79" color="inherit" sx={{ m: 2 }} >
                 <FacebookIcon />
-              </Link>
-              <Link href="/" color="inherit" sx={{ m: 2 }} >
+              </Link> */}
+              <Link href="https://www.instagram.com/ampersandgraphicdesign" color="inherit" sx={{ m: 2 }} >
                 <InstagramIcon />
               </Link>
-              <Link href="https://twitter.com/Ampersand1022" color="inherit" sx={{ m: 2 }} >
+              {/* <Link href="https://twitter.com/Ampersand1022" color="inherit" sx={{ m: 2 }} >
                 <TwitterIcon />
-              </Link>
+              </Link> */}
             </Box>
           </Grid>
         </Grid>

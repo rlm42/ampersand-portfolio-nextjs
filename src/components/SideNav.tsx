@@ -204,10 +204,10 @@ const SideNav = () => {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About Me</Nav.Link>
             <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Logos</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Flyers</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Websits</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">T-Shirts</NavDropdown.Item>
+              <NavDropdown.Item href="/logos">Logos</NavDropdown.Item>
+              <NavDropdown.Item href="/flyers">Flyers</NavDropdown.Item>
+              <NavDropdown.Item href="/websites">Websites</NavDropdown.Item>
+              <NavDropdown.Item href="/t-shirts">T-Shirts</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>

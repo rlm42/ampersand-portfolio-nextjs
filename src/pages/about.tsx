@@ -39,10 +39,10 @@ const About = () => {
         </div>
         <div className="col-4">
           <Image
-            src="/images/mewa2resized2.png"
+            src="/images/mewaresti2.png"
             alt="Me"
             width="350"
-            height="329"
+            height="416"
             layout="intrinsic"
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
