@@ -118,7 +118,7 @@ const Home: NextPage = () => {
               // placeholder="blur" // Optional blur-up while loading
             /> */}
             <img
-              className="d-block h-400 responsive"
+              // className="d-block h-400 responsive"
               // We can resize the image on the fly using ?h=600
               src="https://ampersandportfolio.imgix.net/asthetic2.png"
               alt="Sense of Creativity"
@@ -130,7 +130,7 @@ const Home: NextPage = () => {
             <Carousel fade interval={5000}>
               <Carousel.Item className="fluid d-flex justify-content-center align-items-center">
                 <img
-                  className="d-block h-400 responsive"
+                  // className="d-block h-400 responsive"
                   // We can resize the image on the fly using ?h=600
                   src="https://ampersandportfolio.imgix.net/Dhanesvara%20-%20B%20-%20flyer%20resized2.jpg?&auto=compress,format"
                   alt="Dhanesvara - B Flyer"
@@ -139,8 +139,6 @@ const Home: NextPage = () => {
                   style={{
                     borderRadius: 15,
                   }}
-                  width="550"
-                  height="auto"
                 />
 
                 <Carousel.Caption>
@@ -151,7 +149,7 @@ const Home: NextPage = () => {
 
               <Carousel.Item className="fluid d-flex justify-content-center align-items-center">
                 <img
-                  className="d-block h-400 responsive"
+                  // className="d-block h-400 responsive"
                   src="https://ampersandportfolio.imgix.net/Fisto%20-%20Phootography-logo%20resized2.jpg?&auto=compress,format"
                   alt="Fisto Photography Logo"
                   // height="600px"
@@ -159,8 +157,6 @@ const Home: NextPage = () => {
                   style={{
                     borderRadius: 15,
                   }}
-                  width="550"
-                  height="auto"
                 />
 
                 <Carousel.Caption>
@@ -170,7 +166,7 @@ const Home: NextPage = () => {
               </Carousel.Item>
               <Carousel.Item className="fluid d-flex justify-content-center align-items-center">
                 <img
-                  className="d-block h-400 responsive"
+                  // className="d-block h-400 responsive"
                   src="https://ampersandportfolio.imgix.net/Moville_website%20_1%20resized2.jpg?&auto=compress,format"
                   alt="Movile Website - 1"
                   // height="600px"
@@ -178,8 +174,6 @@ const Home: NextPage = () => {
                   style={{
                     borderRadius: 15,
                   }}
-                  width="550"
-                  height="auto"
                 />
                 <Carousel.Caption>
                   <h3>Website Design</h3>
@@ -188,7 +182,7 @@ const Home: NextPage = () => {
               </Carousel.Item>
               <Carousel.Item className="fluid d-flex justify-content-center align-items-center">
                 <img
-                  className="d-block h-400 w-399"
+                  // className="d-block h-400 w-399"
                   src="https://ampersandportfolio.imgix.net/T-shirt%20Black%20resized2.jpg?&auto=compress,format"
                   alt="Cafe Latte T-Shirt - Black"
                   // height="600px"
@@ -196,8 +190,6 @@ const Home: NextPage = () => {
                   style={{
                     borderRadius: 15,
                   }}
-                  width="550"
-                  height="auto"
                 />
 
                 <Carousel.Caption>
