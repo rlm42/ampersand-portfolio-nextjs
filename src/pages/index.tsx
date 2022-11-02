@@ -96,8 +96,8 @@ const Home: NextPage = () => {
   return (
     <div
       // className={styles.container}
-      style={{ height: "100vh" }}
-      className="fluid d-flex align-items-center justify-content-center"
+      // style={{ height: "100vh" }}
+      className="fluid d-flex align-items-center justify-content-center mt-5"
     >
       <Head>
         <title>Ampersand Graphic Design</title>
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container>
+      <Container fluid className="mt-3">
         <Row className="fluid d-flex justify-content-center align-items-center">
           <Col className="fluid d-flex justify-content-center align-items-center">
             {/* <Image

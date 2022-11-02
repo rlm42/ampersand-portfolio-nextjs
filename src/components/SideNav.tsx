@@ -196,7 +196,7 @@ const SideNav = () => {
       <Container>
         <Navbar.Brand href="/">
           {" "}
-          <img src={ampersandLogo} width="200px" />
+          <img src={ampersandLogo} width="200px" height="auto" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
