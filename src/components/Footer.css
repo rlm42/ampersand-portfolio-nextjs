@@ -3,3 +3,8 @@
   /* color: black; */
   /* font-size: 1vw; */
 }
+
+.footer {
+  /* Z index 9999 puts this on top of any other element, whereas Z index 0 puts it behind */
+  z-index: 9999;
+}

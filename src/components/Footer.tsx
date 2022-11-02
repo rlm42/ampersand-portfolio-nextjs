@@ -88,40 +88,47 @@ const Footer = () => {
     //   </MDBContainer>
     // </MDBFooter>
 
-    <Box
-      // px={{ xs: 3, sm: 10 }}
-      // py={{ xs: 1, sm: 1 }}
-      bgcolor="text.secondary"
-      color="white"
-      position="fixed"
-      left={0}
-      bottom={0}
-      right={0}
-    >
-      <Container maxWidth="lg">
-        <Grid container spacing={5}>
-          <Grid item md={6}>
-            <Box textAlign="left" className="footer-text">
-              &copy; {new Date().getFullYear()} Copyright -{" "}
-              <a>Ampersand Graphic Design</a>
-            </Box>
-          </Grid>
-          <Grid item md={6}>
-            <Box textAlign="right">
-              {/* <Link href="https://www.facebook.com/ampersand.graphicdesign.79" color="inherit" sx={{ m: 2 }} >
+    <div className="m-5">
+      <Box
+        // px={{ xs: 3, sm: 10 }}
+        // py={{ xs: 1, sm: 1 }}
+        bgcolor="text.secondary"
+        color="white"
+        position="fixed"
+        left={0}
+        bottom={0}
+        right={0}
+        className="footer"
+      >
+        <Container maxWidth="lg">
+          <Grid container>
+            <Grid item md={6}>
+              <Box textAlign="left" className="footer-text">
+                &copy; {new Date().getFullYear()} Copyright -{" "}
+                <a>Ampersand Graphic Design</a>
+              </Box>
+            </Grid>
+            <Grid item md={6}>
+              <Box textAlign="right" className="footer-box">
+                {/* <Link href="https://www.facebook.com/ampersand.graphicdesign.79" color="inherit" sx={{ m: 2 }} >
                 <FacebookIcon />
               </Link> */}
-              <Link href="https://www.instagram.com/ampersandgraphicdesign" color="inherit" sx={{ m: 2 }} >
-                <InstagramIcon />
-              </Link>
-              {/* <Link href="https://twitter.com/Ampersand1022" color="inherit" sx={{ m: 2 }} >
+                <Link
+                  href="https://www.instagram.com/ampersandgraphicdesign"
+                  color="inherit"
+                  sx={{ m: 2 }}
+                >
+                  <InstagramIcon />
+                </Link>
+                {/* <Link href="https://twitter.com/Ampersand1022" color="inherit" sx={{ m: 2 }} >
                 <TwitterIcon />
               </Link> */}
-            </Box>
+              </Box>
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
-    </Box>
+        </Container>
+      </Box>
+    </div>
   );
 };
 
