@@ -101,7 +101,7 @@ const Footer = () => {
       <Container maxWidth="lg">
         <Grid container spacing={5}>
           <Grid item md={6}>
-            <Box textAlign="left">
+            <Box textAlign="left" className="footer-text">
               &copy; {new Date().getFullYear()} Copyright -{" "}
               <a>Ampersand Graphic Design</a>
             </Box>
